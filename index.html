@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"  ng-app="myApp">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <base href="/deMarke/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Assets/css/custom.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="Assets/js/bootstrap.js"></script>
+
+    <script src="Assets/js/angular.min.js"></script>
+    <script src="Assets/js/angular-route.min.js"></script>
+    <script src="Assets/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="Home/home.controller.js"></script>
+    <script src="News/news.controller.js"></script>
+
+    <title>De Marke</title>
+
+  </head>
+  <body ng-controller="mainCtrl" class="layout-dark">
+   
+        <!-- #header -->
+        <header ng-include="'Layout/header.html'"></header>
+
+        <!-- #view -->
+        <main ng-view></main>
+    
+        <!-- #footer -->
+        <footer ng-include="'Layout/footer.html'"></footer>
+
+  </body>
+</html>
