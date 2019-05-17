@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute','app.home','app.news']);
+var app = angular.module('myApp', ['ngRoute','mb-adaptive-backgrounds','app.home','app.news']);
 app.constant('CONS', {
     appHttp: window.location.href.indexOf('localhost') > -1 ? 'http://192.168.1.27/api' : 'http://192.168.1.27/api',
 });
